@@ -9,11 +9,15 @@ let when = [
   "while I was praying"
 ];
 
+function getRandomElement(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 function generateExcuse() {
-  let randomWho = who[Math.floor(Math.random() * who.length)];
-  let randomAction = action[Math.floor(Math.random() * action.length)];
-  let randomWhat = what[Math.floor(Math.random() * what.length)];
-  let randomWhen = when[Math.floor(Math.random() * when.length)];
+  let randomWho = getRandomElement(who);
+  let randomAction = getRandomElement(action);
+  let randomWhat = getRandomElement(what);
+  let randomWhen = getRandomElement(when);
 
   return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
 }
