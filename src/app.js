@@ -9,6 +9,10 @@ let when = [
   "while I was praying"
 ];
 
+/*He creado la función getRandomElement para evitar repetir el 
+ código que selecciona un elemento aleatorio de una lista
+ haciendo el código más limpio y reutilizable. */
+
 function getRandomElement(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
